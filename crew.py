@@ -28,25 +28,25 @@ def matrix_effect(duration=DURATION):
                     char = random.choice(CHARS)
                     matrix[i] = char
                     sys.stdout.write(f"{CSI}{random.randint(1, lines)};{i}f")
-                    sys.stdout.write(f"{CSI}32m{char}\033[0m")  # Affichage en vert
+                    sys.stdout.write(f"{CSI}32m{char}\033[0m")  
                     sys.stdout.flush()
 
-                # Ajuster la vitesse de défilement
+                
                 if speed[i] > 0:
                     speed[i] -= 1
                 else:
                     speed[i] = random.randint(1, 5)
                     sys.stdout.write(f"{CSI}{lines};{i}f")
-                    sys.stdout.write(" ")  # Efface après chaque cascade
+                    sys.stdout.write(" ")  
                     sys.stdout.flush()
 
             time.sleep(FRAME_DELAY)
 
     finally:
-        # Restaurer le curseur et réinitialiser l'écran
-        sys.stdout.write(f"{CSI}2J")  # Efface l'écran
-        sys.stdout.write(f"{CSI}0m")  # Réinitialise les couleurs
-        sys.stdout.write(f"{CSI}?25h")  # Affiche à nouveau le curseur
+        
+        sys.stdout.write(f"{CSI}2J")  
+        sys.stdout.write(f"{CSI}0m")
+        sys.stdout.write(f"{CSI}?25h")
         sys.stdout.flush()
         print("\033[92m✅ Le système est stabilisé.\033[0m\n")
 
@@ -171,10 +171,9 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def user_do():
-    global crew, action_counter  # Utilisation des variables globales
-
-    while True:  # Boucle infinie pour afficher le menu en continu
-        clear_terminal()  # Efface le terminal à chaque itération
+    global crew, action_counter  
+    while True:  
+        clear_terminal()  
         print("\n--- MENU DE L'ÉQUIPAGE ---")
         print("1. Ajouter un membre")
         print("2. Supprimer un membre")
@@ -198,12 +197,10 @@ def user_do():
             check_crew(crew)
         elif lunch_function == "5":
             print("👋 Au revoir !")
-            break  # Sort de la boucle et termine le programme
+            break  
 
-        # Incrémentation du compteur d'actions
         action_counter += 1
 
-        # Déclenche un événement toutes les deux actions
         if action_counter % 1 == 0:
             print("\n🎲 \033[94mUn événement aléatoire se produit...\033[0m\n")
             trigger_random_event(crew)
