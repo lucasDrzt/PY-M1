@@ -207,20 +207,6 @@ def user_do():
 
         input("\n\033[90m[Appuyez sur Entrée pour continuer...]\033[0m")
 
-def matrix_effect(duration=5):
-    columns = os.get_terminal_size().columns
-    lines = os.get_terminal_size().lines   
-    end_time = time.time() + duration
-    
-    while time.time() < end_time:
-        matrix_line = ''.join(random.choices("01 ", k=columns))
-        print(f"\033[92m{matrix_line}\033[0m")
-        time.sleep(0.1)  
-
-    print("\033[93m🛠️  Récupération du système en cours...\033[0m")
-    time.sleep(1)
-    print("\033[92m✅ Le système est stabilisé. Ouf !\033[0m\n")
-
 def simulate_terminal_glitch():
     for _ in range(10):
         glitch_line = ''.join(random.choices(string.ascii_letters + string.digits + '!@#$%^&*()', k=120))
