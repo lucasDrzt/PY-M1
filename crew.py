@@ -64,14 +64,6 @@ crew = [
 action_counter = 0
 
 def add_member(crew):
-
-    def get_non_empty_input(prompt):
-        while True:
-            value = input(prompt)
-            if value.strip():
-                return value
-            print("Ce champ est obligatoire. Veuillez réessayer.")
-
     first_name = input("Quelle est le prénom du membre d'équipage : ")
     while len(first_name) < 3 or len(first_name) > 15:
         print ("prénom contiennent entre 3 et 15 caractères")
@@ -81,7 +73,6 @@ def add_member(crew):
     while len(last_name) < 3 or len(last_name) > 15:
         print ("prénom contiennent entre 3 et 15 caractères")
         last_name = input("Quelle est le nom du membre d'équipage : ")
-
 
     gender = input("Quel est le genre du membre d'équipage : ")
     while not gender.strip():
