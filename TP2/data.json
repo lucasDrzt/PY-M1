@@ -1,0 +1,182 @@
+{
+    "fleets": [
+        {
+            "name": "Galactica",
+            "spaceships": [
+                {
+                    "name": "Bayta",
+                    "type": "Merchant",
+                    "condition": "Operational",
+                    "crew": [
+                        {
+                            "first_name": "Fallom",
+                            "last_name": "",
+                            "role": "Pilot",
+                            "age": 28
+                        },
+                        {
+                            "first_name": "Eskel Gorov",
+                            "last_name": "",
+                            "role": "Merchant",
+                            "age": 32
+                        },
+                        {
+                            "first_name": "Harlan Branno",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 38
+                        },
+                        {
+                            "first_name": "Bayta Darell",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 48
+                        }
+                    ]
+                },
+                {
+                    "name": "Dark Nebula",
+                    "type": "Warship",
+                    "condition": "Damaged",
+                    "crew": [
+                        {
+                            "first_name": "Han Pritcher",
+                            "last_name": "",
+                            "role": "Armorer",
+                            "age": 31
+                        },
+                        {
+                            "first_name": "Salvor Hardin",
+                            "last_name": "",
+                            "role": "Armorer",
+                            "age": 28
+                        },
+                        {
+                            "first_name": "Jagger Fount",
+                            "last_name": "",
+                            "role": "Pilot",
+                            "age": 41
+                        },
+                        {
+                            "first_name": "Joie",
+                            "last_name": "",
+                            "role": "Mentalist",
+                            "age": 25
+                        },
+                        {
+                            "first_name": "Toran Darell",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 52
+                        }
+                    ]
+                },
+                {
+                    "name": "Fearless",
+                    "type": "Warship",
+                    "condition": "Operational",
+                    "crew": [
+                        {
+                            "first_name": "Lathan Devers",
+                            "last_name": "",
+                            "role": "Merchant",
+                            "age": 46
+                        },
+                        {
+                            "first_name": "Lewis Pirenne",
+                            "last_name": "",
+                            "role": "Pilot",
+                            "age": 34
+                        },
+                        {
+                            "first_name": "Tellem Bond",
+                            "last_name": "",
+                            "role": "Mentalist",
+                            "age": 48
+                        },
+                        {
+                            "first_name": "Yanna Seldon",
+                            "last_name": "",
+                            "role": "Mentalist",
+                            "age": 52
+                        },
+                        {
+                            "first_name": "Ebling Mis",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 34
+                        }
+                    ]
+                },
+                {
+                    "name": "Unimara",
+                    "type": "Merchant",
+                    "condition": "Operational",
+                    "crew": [
+                        {
+                            "first_name": "Limmar Ponyets",
+                            "last_name": "",
+                            "role": "Merchant",
+                            "age": 43
+                        },
+                        {
+                            "first_name": "Novi Sura",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 25
+                        },
+                        {
+                            "first_name": "Munn Compor",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 27
+                        },
+                        {
+                            "first_name": "Stora Gendibal",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 35
+                        },
+                        {
+                            "first_name": "Hugo Crast",
+                            "last_name": "",
+                            "role": "Pilot",
+                            "age": 37
+                        }
+                    ]
+                },
+                {
+                    "name": "Weinis",
+                    "type": "Merchant",
+                    "condition": "Damaged",
+                    "crew": [
+                        {
+                            "first_name": "Yugo Amary",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 33
+                        },
+                        {
+                            "first_name": "Jord Commasson",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 53
+                        },
+                        {
+                            "first_name": "Gaal Dornick",
+                            "last_name": "",
+                            "role": "Maintenance",
+                            "age": 34
+                        },
+                        {
+                            "first_name": "Hober Mallow",
+                            "last_name": "",
+                            "role": "Pilot",
+                            "age": 52
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
